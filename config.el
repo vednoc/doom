@@ -11,5 +11,7 @@
 
 
   doom-theme 'doom-sourcerer
-  doom-font (font-spec :family "Iosevka" :size 14)
-  doom-big-font (font-spec :family "Iosevka" :size 20))
+  doom-font (font-spec :family "Iosevka Light" :size 14)
+  doom-big-font (font-spec :family "Iosevka Light" :size 20)
+  doom-unicode-font(font-spec :family "Dejavu Sans Mono" :size 14)
+  doom-variable-pitch-font(font-spec :family "Inter"))
