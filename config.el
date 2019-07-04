@@ -10,7 +10,7 @@
   git-gutter:window-width -1
 
 
-  doom-theme 'doom-sourcerer
+  doom-theme 'doom-gruvbox-dark-hard
   doom-font (font-spec :family "Iosevka Light" :size 14)
   doom-big-font (font-spec :family "Iosevka Light" :size 20)
   doom-unicode-font(font-spec :family "Dejavu Sans Mono" :size 14)
