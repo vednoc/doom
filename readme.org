@@ -1,3 +1,3 @@
 #+TITLE: .doom.d
 
-This is my personal config for [[github:hlissner/doom-emacs][Doom Emacs]].
+This is my personal config for [[https://github.com/hlissner/doom-emacs][Doom Emacs]].
