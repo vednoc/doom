@@ -19,3 +19,10 @@
 (add-hook 'prog-mode-hook #'visual-line-mode t)
 (add-hook 'stylus-mode-hook #'visual-line-mode t)
 
+;; Org-mode configs.
+(after! org
+  (setq
+    ;; Log time when marked as done.
+    org-log-done 'time
+  ))
+
