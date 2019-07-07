@@ -1,6 +1,5 @@
 ;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
 
-(global-visual-line-mode t)
 (global-git-gutter-mode t)
 
 (setq
@@ -15,3 +14,8 @@
   doom-big-font (font-spec :family "Iosevka Light" :size 20)
   doom-unicode-font(font-spec :family "Dejavu Sans Mono" :size 14)
   doom-variable-pitch-font(font-spec :family "Inter"))
+
+;; Word wrap.
+(add-hook 'prog-mode-hook #'visual-line-mode t)
+(add-hook 'stylus-mode-hook #'visual-line-mode t)
+
