@@ -17,7 +17,13 @@
 
 ;; Word wrap.
 (add-hook 'prog-mode-hook #'visual-line-mode t)
-(add-hook 'stylus-mode-hook #'visual-line-mode t)
+
+;; Stylus configs.
+(add-hook 'stylus-mode-hook (lambda ()
+                              (hl-todo-mode t)
+                              (visual-line-mode t)
+                              (rainbow-delimiters-mode t)
+                              (highlight-indent-guides-mode t)))
 
 ;; Org-mode configs.
 (after! org
