@@ -25,6 +25,10 @@
                               (rainbow-delimiters-mode t)
                               (highlight-indent-guides-mode t)))
 
+;; Character used to render indent guides.
+(after! highlight-indent-guides
+  (setq highlight-indent-guides-character ?\┊))
+
 ;; Org-mode configs.
 (after! org
   (setq
