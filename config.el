@@ -36,3 +36,7 @@
     org-log-done 'time
   ))
 
+;; https://github.com/hlissner/emacs-solaire-mode/issues/21
+(after! treemacs
+  (advice-add '+treemacs--init :after #'balance-windows))
+
