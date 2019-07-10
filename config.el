@@ -36,6 +36,9 @@
     org-log-done 'time
   ))
 
+;; Fix hardcoded tab-width value in Jade mode; found in Stylus files as well.
+;;; (setq sws-tab-width 4)
+
 ;; https://github.com/hlissner/emacs-solaire-mode/issues/21
 (after! treemacs
   (advice-add '+treemacs--init :after #'balance-windows))
