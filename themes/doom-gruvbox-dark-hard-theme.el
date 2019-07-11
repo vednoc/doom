@@ -232,13 +232,13 @@ determine the exact padding."
    (markdown-code-face :background (doom-lighten base2 0.045))
 
    ;; org-mode
-   (org-level-1 :foreground yellow :bold bold :height 1.2)
-   (org-level-2 :inherit 'org-level-1 :foreground cyan)
-   (org-level-3 :bold bold :foreground green)
+   (org-level-1 :foreground fg :bold bold :height 1.4)
+   (org-level-2 :inherit 'org-level-1 :height 0.8)
+   (org-level-3 :foreground fg :bold bold)
    (org-level-4 :inherit 'org-level-3)
    (org-level-5 :inherit 'org-level-3)
    (org-level-6 :inherit 'org-level-3)
-   (org-ellipsis :underline nil :background base2 :foreground orange)
+   (org-ellipsis :underline nil :foreground fg-light)
    (org-tag :foreground yellow :bold nil)
    (org-quote :inherit 'italic :foreground base7 :background org-quote)
    (org-todo :foreground yellow :bold 'inherit)
