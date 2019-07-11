@@ -8,7 +8,6 @@
   git-gutter:update-interval 2
   git-gutter:window-width -1
 
-
   doom-theme 'doom-gruvbox-dark-hard
   doom-font (font-spec :family "Iosevka Light" :size 14)
   doom-big-font (font-spec :family "Iosevka Light" :size 20)
@@ -34,7 +33,9 @@
   (setq
     ;; Log time when marked as done.
     org-log-done 'time
-  ))
+    org-ellipsis " ..."
+    org-bullets-bullet-list '("")
+    org-directory "~/doc/org"))
 
 ;; Fix hardcoded tab-width value in Jade mode; found in Stylus files as well.
 ;;; (setq sws-tab-width 4)
