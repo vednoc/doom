@@ -92,7 +92,7 @@ determine the exact padding."
   ;; --- extra faces ------------------------
 (
    ;;;;;;;; Editor ;;;;;;;;
-   (cursor :background "white")
+   (cursor :background orange)
    (hl-line :background bg-alt)
    ((line-number-current-line &override) :background grey :foreground "white" :bold t)
    ((line-number &override) :foreground grey)

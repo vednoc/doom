@@ -1,4 +1,4 @@
-;;; ~/.doom.d/config.el -*- lexical-binding: t; -*-
+;;; -*- lexical-binding: t; -*-
 
 (global-git-gutter-mode t)
 
@@ -34,11 +34,11 @@
     ;; Log time when marked as done.
     org-log-done 'time
     org-ellipsis " ..."
-    org-bullets-bullet-list '("")
+    org-bullets-bullet-list '("○")
     org-directory "~/doc/org"))
 
 ;; Fix hardcoded tab-width value in Jade mode; found in Stylus files as well.
-;;; (setq sws-tab-width 4)
+(setq sws-tab-width 4)
 
 ;; https://github.com/hlissner/emacs-solaire-mode/issues/21
 (after! treemacs
