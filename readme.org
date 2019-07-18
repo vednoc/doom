@@ -1,3 +1,5 @@
 #+TITLE: .doom.d
 
 This is my personal config for [[https://github.com/hlissner/doom-emacs][Doom Emacs]].
+
+[[https://gitlab.com/vednoc/doom.d/raw/images/screenshot.png]]
