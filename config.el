@@ -1,9 +1,12 @@
 ;;; -*- lexical-binding: t; -*-
 
 (global-git-gutter-mode t)
+(global-prettify-symbols-mode)
 
 (setq
-  display-line-numbers-type nil
+ display-line-numbers-type 'relative
+
+ window-divider-default-bottom-width 0
 
   git-gutter:update-interval 2
   git-gutter:window-width -1
