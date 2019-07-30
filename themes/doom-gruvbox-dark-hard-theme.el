@@ -92,10 +92,10 @@ determine the exact padding."
   ;; --- extra faces ------------------------
 (
    ;;;;;;;; Editor ;;;;;;;;
-   (cursor :background orange)
+   (cursor :background yellow)
    (hl-line :background bg-alt)
-   ((line-number-current-line &override) :background grey :foreground "white" :bold t)
-   ((line-number &override) :foreground grey)
+   ((line-number-current-line &override) :background bg-alt :foreground fg :bold t)
+   ((line-number &override) :foreground fg-alt)
 
    ;; Vimish-fold
    ((vimish-fold-overlay &override) :inherit 'font-lock-comment-face :background accent :weight 'light)
@@ -108,7 +108,7 @@ determine the exact padding."
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color base3)))
 
    (mode-line-inactive
-    :background bg :foreground base4
+    :background bg-alt :foreground base4
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color base2)))
 
    ;; File-name
