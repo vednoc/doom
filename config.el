@@ -30,7 +30,9 @@
 
 ;; Character used to render indent guides.
 (after! highlight-indent-guides
-  (setq highlight-indent-guides-character ?\┊))
+  (setq highlight-indent-guides-responsive 'top
+        highlight-indent-guides-character ?\¦))
+
 
 ;; Org-mode configs.
 (after! org
@@ -38,7 +40,7 @@
     ;; Log time when marked as done.
     org-log-done 'time
     org-ellipsis " ..."
-    org-bullets-bullet-list '("○")
+    org-bullets-bullet-list '("◉" "○")
     org-directory "~/doc/org"))
 
 ;; Fix hardcoded tab-width value in Jade mode; found in Stylus files as well.
