@@ -50,3 +50,6 @@
 (after! treemacs
   (advice-add '+treemacs--init :after #'balance-windows))
 
+(add-hook 'crystal-mode-hook
+          (lambda () (add-hook 'before-save-hook #'crystal-tool-format)))
+
