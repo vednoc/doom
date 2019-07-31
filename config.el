@@ -3,19 +3,20 @@
 (global-git-gutter-mode t)
 (global-prettify-symbols-mode)
 
-(setq
- display-line-numbers-type 'relative
 
- window-divider-default-bottom-width 0
+(setq display-line-numbers-type 'relative
 
-  git-gutter:update-interval 2
-  git-gutter:window-width -1
+      window-divider-default-bottom-width 0
 
-  doom-theme 'doom-gruvbox-dark-hard
-  doom-font (font-spec :family "Iosevka Light" :size 14)
-  doom-big-font (font-spec :family "Iosevka Light" :size 20)
-  doom-unicode-font(font-spec :family "Dejavu Sans Mono" :size 14)
-  doom-variable-pitch-font(font-spec :family "Inter"))
+      git-gutter:update-interval 2
+      git-gutter:window-width -1
+
+      doom-theme 'doom-gruvbox-dark-hard
+
+      doom-font (font-spec :family "Iosevka Light" :size 14)
+      doom-big-font (font-spec :family "Iosevka Light" :size 20)
+      doom-unicode-font(font-spec :family "Dejavu Sans Mono" :size 14)
+      doom-variable-pitch-font(font-spec :family "Inter"))
 
 ;; Word wrap.
 (add-hook 'prog-mode-hook #'visual-line-mode t)
