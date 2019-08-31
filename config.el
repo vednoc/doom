@@ -11,6 +11,8 @@
       git-gutter:update-interval 2
       git-gutter:window-width -1
 
+      doom-modeline-major-mode-icon 1
+
       doom-theme 'doom-gruvbox-dark-hard
 
       doom-font (font-spec :family "Iosevka Light" :size 14)
@@ -33,6 +35,8 @@
   (setq highlight-indent-guides-responsive 'top
         highlight-indent-guides-character ?\¦))
 
+(after! doom-modeline
+  (setq doom-modeline-buffer-file-name-style 'relative-to-project))
 
 ;; Org-mode configs.
 (after! org
